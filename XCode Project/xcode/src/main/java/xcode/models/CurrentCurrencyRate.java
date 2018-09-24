@@ -3,7 +3,6 @@ package xcode.models;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-
 public class CurrentCurrencyRate {
 	
 	private BigDecimal value;
@@ -21,6 +20,5 @@ public class CurrentCurrencyRate {
     }
 
 	public CurrentCurrencyRate() {
-	}
-	
+	}	
 }

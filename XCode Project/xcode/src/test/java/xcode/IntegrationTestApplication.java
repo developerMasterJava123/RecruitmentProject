@@ -93,7 +93,6 @@ public class IntegrationTestApplication {
 		Assert.assertThat(response.getStatusCode(), is(HttpStatus.OK));
 	}
 	
-	
 	@Test
 	public void shouldGetNumberListWithNullsWhenOrderIsASCAndNumberListHasAllElementsNulls() {
 		List<Long> numberList = new ArrayList<>(Arrays.asList(null,null));
@@ -205,5 +204,4 @@ public class IntegrationTestApplication {
 		Assert.assertThat(response.getBody(),Matchers.nullValue());
 		Assert.assertThat(response.getStatusCode(), is(HttpStatus.NOT_FOUND));
 	}
-	
 }

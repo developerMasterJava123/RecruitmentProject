@@ -3,7 +3,6 @@ package xcode.models;
 import java.math.BigDecimal;
 import java.util.List;
 
-
 public class  ExchangeRateResponse {
 	
 	public static class Rate {
@@ -44,10 +43,7 @@ public class  ExchangeRateResponse {
 		}
 
 		public Rate() {
-		}
-			
-		
-		
+		}	
 	}
 	
 	private String table;
@@ -106,5 +102,4 @@ public class  ExchangeRateResponse {
 		this.effectiveDate = effectiveDate;
 		this.rates = rates;
 	}
-	
 }

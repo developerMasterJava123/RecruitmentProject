@@ -37,7 +37,6 @@ public class CalculatorNumbersRequestValidatorTest {
 		CalculatorNumbersRequest request = new CalculatorNumbersRequest();
 		request.setNumbers(null);   
 		validator.validate(request);
-	
 	}
 	
 	@Test
@@ -66,5 +65,4 @@ public class CalculatorNumbersRequestValidatorTest {
 		request.setOrder(new String(TypeOrder.DESC.toString()));
 		validator.validate(request);
 	}
-		
 }

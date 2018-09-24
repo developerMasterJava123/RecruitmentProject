@@ -33,9 +33,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 
 import java.util.ArrayList;
 
-
-
-
 //Explanations - This test checks HttpStatus Response depending on exceptions
 @RunWith(SpringRunner.class)
 @WebMvcTest(CurrencyRatesAndCalculatorNumberController.class)
@@ -67,8 +64,7 @@ public class CurrencyRatesAndCalculatorNumberControllerTest {
 	    String requestJson = objectMapper.writeValueAsString(new CalculatorNumbersRequest());
 	    Mockito.when(CalculatorNumbersServiceImpl.getSortedNumberList(
 	    			any(CalculatorNumbersRequest.class)))
-	    		.thenThrow(InvalidCalculatorNumbersRequestException.class);
-	    
+	    		.thenThrow(InvalidCalculatorNumbersRequestException.class);	    
 	    MockHttpServletResponse response = mockMvc.perform(post("/numbers/sort-command")
 	    									 .contentType(MediaType.APPLICATION_JSON)
 	    								     .content(requestJson))

@@ -2,7 +2,6 @@ package xcode.models;
 
 import java.util.List;
 
-
 public class CalculatorNumbersRequest {
 	
 	private List<Long> numbers;
@@ -25,7 +24,6 @@ public class CalculatorNumbersRequest {
 		this.order = order;
 	}
 
-
 	public CalculatorNumbersRequest() {
 	}
 
@@ -33,6 +31,4 @@ public class CalculatorNumbersRequest {
 		this.numbers = numbers;
 		this.order = order;
 	}
-
-
 }

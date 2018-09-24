@@ -39,8 +39,6 @@ public class CalculatorNumbersServiceTest {
 		Assert.assertThat(numberList,is(ascOrderNumberList));	
 	}
 	
-
-	
 	@Test()	
 	public void shouldGetAscendingOrderListWithLastNullsWhenOrderIsASCValueAndNumberListHasNulls() {
 		List<Long> numberList = Stream.of(null,4L,2L,null,3L).collect(Collectors.toList());

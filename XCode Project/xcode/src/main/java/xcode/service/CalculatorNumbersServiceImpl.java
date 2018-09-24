@@ -11,7 +11,6 @@ import xcode.models.SortedNumberList;
 import xcode.models.TypeOrder;
 import xcode.validators.CalculatorNumbersRequestValidator;
 
-
 @Service
 public class CalculatorNumbersServiceImpl implements CalculatorNumbersService {
 
